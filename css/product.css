@@ -18,6 +18,7 @@
 /* Product Items */
 .product {
     display: inline-block;
+    position: relative;
     width: 300px;
     margin-top: 20px;
 }
@@ -44,4 +45,11 @@
 .product .product-body h3 {
     color: #55809e;
     font-size: 1.25rem;
+}
+
+.sale-label {
+    position: absolute;
+    color: #ffffff;
+    background: #d83636;
+    padding: 3px 7px;
 }

@@ -12,6 +12,11 @@
             // List products on the front end
             $.each(data, function(index, product) {
                 itemHTML += '<li class="product" data-type="' + product.type + '" data-sale="' + product.isSale + '">';
+
+                if (product.isSale == true) {
+                    itemHTML += '<span class="sale-label">On Sale</span>';
+                }
+
                 itemHTML += '<div class="img-wrap"><img class="card-img-top" src="../products/images/' + product.image + '" alt="' + product.name + '"></div>';
                 itemHTML += '<div class="product-body">';
                 itemHTML += '<a href="#"><h3>' + product.name + '</h3></a>';
@@ -37,7 +42,7 @@
                 allProducts.show();
             }
 
-            if (value == 'Sale') {
+            if (value == 'On Sale') {
                 saleProducts.show();
             }
         });
