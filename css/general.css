@@ -1,0 +1,13 @@
+body {
+    background: #55809e;
+}
+
+#app {
+    background: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+}
