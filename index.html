@@ -8,11 +8,22 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
   </head>
   <body>
-    <div id="app">
-      <div class="container" id="filter">
-
+    <div class="container" id="app">
+      <!-- Filter Section -->
+      <div id="filter">
+        <label for="product-filter">Filter by: </label>
+        <select id="filter-dropdown" name="product-filter">
+          <option value="All">All</option>
+          <option value="Sale">Sale</option>
+          <option value="Beer">Beer</option>
+          <option value="Wine">Wine</option>
+          <option value="Cider">Cider</option>
+          <option value="Spirits">Spirits</option>
+        </select>
       </div>
-      <div class="container" id="products">
+      
+      <!-- Products Section -->
+      <div id="products">
         <ul></ul>
       </div>
     </div>

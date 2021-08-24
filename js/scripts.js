@@ -22,5 +22,24 @@
 
             $('#products ul').html(itemHTML);
         });
+
+        // Filter products by type
+        $("#filter-dropdown").on("change", function() {
+            var value = this.value;
+            var allProducts = $("li.product");
+            var selectedProducts = $('li.product[data-type="' + value + '"]');
+            var saleProducts = $('li.product[data-sale="true"]');
+
+            allProducts.hide();
+            selectedProducts.show();
+
+            if (value == 'All') {
+                allProducts.show();
+            }
+
+            if (value == 'Sale') {
+                saleProducts.show();
+            }
+        });
     });
 }(jQuery));
