@@ -1,4 +1,11 @@
 #filter {
-  text-align: right;
-  padding: 20px;
+    padding-top: 20px;
+}
+
+#filter > div {
+    margin-bottom: 20px;
+}
+
+#filter > div:first-child {
+    text-align: right;
 }
